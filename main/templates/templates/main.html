@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ответы на билеты</title>
+</head>
+<body>
+    <h1>Ответьте пожалуйста на этот вопрос и введите свое имя</h1>
+    <h2>{{ answer.question }}</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Отправить</button>
+    </form>
+</body> 
+</html>

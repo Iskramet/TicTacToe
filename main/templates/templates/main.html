@@ -1,16 +1,22 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ответы на билеты</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+<form class="box" action="main.html" method="post">
     <h1>Ответьте пожалуйста на этот вопрос и введите свое имя</h1>
-    <h2>{{ answer.question }}</h2>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form }}
-        <button type="submit">Отправить</button>
-    </form>
-</body> 
+    <h2>Тут должен быть вопрос, но его нет ^_^</h2>
+    <input type="name" name="" placeholder="Имя">
+    <input type="answer" name="" placeholder="Ответ">
+    <input type="submit" name="" value="Отправить">
+</form>
+
+
+
+  </body>
 </html>

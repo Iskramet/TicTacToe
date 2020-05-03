@@ -1,0 +1,56 @@
+body
+{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    font-weight: bold;
+    background-color: #F9F9F9;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.question
+{
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+}
+
+.warp
+{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    margin: 0;
+}
+
+.ram
+{
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+h3
+{
+    text-align: center;
+}
+
+input
+{
+    width: 100%;
+}
+
+form
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

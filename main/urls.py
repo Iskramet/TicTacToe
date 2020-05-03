@@ -3,6 +3,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.ran),
-    path('<count>', views.main, name='main'),
+    path('', views.HelloPage.as_view()),
+    path('questions/', views.QuestionsPage.as_view(), name='questionpage'),
 ]

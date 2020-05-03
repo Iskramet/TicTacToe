@@ -1,0 +1,60 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/main.css' %}">
+    <title>Ответы на билеты</title>
+</head>
+<body>
+    <div class="warp">
+        <div>
+            <h1>Ответьте пожалуйста на эти вопросы</h1>
+
+            <div style="display: flex; justify-content: center;">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div style="width: 70%;">
+                        <div class="ram">
+                            <h3>Ваше имя</h3>
+                            <div style="display: flex; justify-content: center;">{{ form.name }}</div>
+                        </div>
+
+                        <div class="ram">
+                            <h3>Вопрос №1</h3>
+                            <div class="question">{{ answer0.question }}</div>
+                            {{ form.answer }}
+                        </div>
+
+                        <div class="ram">
+                            <h3>Вопрос №2</h3>
+                            <div class="question">{{ answer1.question }}</div>
+                            {{ form.answer1 }}
+                        </div>
+
+                        <div class="ram">
+                            <h3>Вопрос №3</h3>
+                            <div class="question">{{ answer2.question }}</div>
+                            {{ form.answer2 }}
+                        </div>
+
+                        <div class="ram">
+                            <h3>Вопрос №4</h3>
+                            <div class="question">{{ answer3.question }}</div>
+                            {{ form.answer3 }}
+                        </div>
+
+                        <div class="ram">
+                            <h3>Вопрос №5</h3>
+                            <div class="question">{{ answer4.question }}</div>
+                            {{ form.answer4 }}
+                        </div>
+                        <button type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body> 
+</html>
